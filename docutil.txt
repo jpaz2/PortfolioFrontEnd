@@ -2,3 +2,8 @@ https://htmlcheatsheet.com/css/
 
 https://developer.mozilla.org/es/docs/Learn
 
+https://html.com/blog/html-5-cheat-sheets/
+
+https://www.emezeta.com/articulos/css3-cheatsheet-chuleta-css
+
+https://www.w3schools.com/tags/tag_meta.asp
