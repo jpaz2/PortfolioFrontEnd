@@ -12,6 +12,8 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module'; 
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.componen
     PiePaginaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

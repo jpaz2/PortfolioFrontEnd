@@ -1,1 +1,26 @@
-<p>educacion works!</p>
+<ul>
+    <li *ngFor = "let educacion of listaEducacion">
+        <div class="data-container">
+            <a href="#">
+                <div class="logo-image-container">
+                    <img
+                      class="logo-image"
+                      [src]="educacion.img"
+                    />
+                </div>
+                <div class="list-info">
+                    <div>
+                        <h3>{{educacion.school}}</h3>
+                        <p>{{educacion.career}}</p>
+                        <p><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
+                    </div>
+                </div>                
+            </a>
+        </div>
+        <div class="data-control">
+            <div class="btn-edit">
+                <a href="#" class="btn-rigth"><i class="fa fa-pen"></i></a>
+            </div>
+        </div>
+    </li>
+</ul>
