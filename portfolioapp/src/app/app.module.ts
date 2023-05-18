@@ -14,6 +14,7 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module'; 
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
+
   ],
   providers: [],
   bootstrap: [AppComponent]

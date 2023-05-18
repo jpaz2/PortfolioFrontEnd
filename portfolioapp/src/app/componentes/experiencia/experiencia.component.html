@@ -1,1 +1,37 @@
-<p>experiencia works!</p>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Experiencia
+        </h1>
+    </div>
+    <div class="col-md-12">
+        <ul>
+            <li *ngFor = "let experiencia of listaExperiencia">
+                <div class="data-container">
+                    <a href="#">
+                        <div class="logo-image-container">
+                            <img
+                              class="logo-image"
+                              [src]="experiencia.img"
+                            />
+                        </div>
+                        <div class="list-info">
+                            <div>
+                                <h3>{{experiencia.school}}</h3>
+                                <p>{{experiencia.career}}</p>
+                                <p><time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time></p>
+                            </div>
+                        </div>                
+                    </a>
+                </div>
+                <div class="data-control">
+                    <div class="btn-edit">
+                        <a href="#" class="btn-rigth"><i class="fa fa-pen"></i></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+    </div>  
+</div>
+
