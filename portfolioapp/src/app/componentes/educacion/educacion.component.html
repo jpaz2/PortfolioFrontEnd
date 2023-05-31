@@ -8,7 +8,6 @@
         <ul>
             <li *ngFor = "let educacion of listaEducacion">
                 <div class="data-container">
-                    <a href="#">
                         <div class="logo-image-container">
                             <img
                               class="logo-image"
@@ -17,12 +16,11 @@
                         </div>
                         <div class="list-info">
                             <div>
-                                <h3>{{educacion.school}}</h3>
-                                <p>{{educacion.career}}</p>
-                                <p><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
+                                <h3>{{educacion.nombre}}</h3>
+                                <p>{{educacion.direccion}}</p>
+                                <p><time>{{educacion.fechaInicio}}</time> - <time>{{educacion.fechafin}}</time></p>
                             </div>
                         </div>                
-                    </a>
                 </div>
                 <div class="data-control">
                     <div class="btn-edit">
