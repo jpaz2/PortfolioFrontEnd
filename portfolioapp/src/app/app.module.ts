@@ -15,6 +15,11 @@ import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.componen
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module'; 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { LoginComponent } from './componentes/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InicioComponent } from './componentes/inicio/inicio.component';
+
+
 
 @NgModule({
   declarations: [
@@ -28,13 +33,17 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     HabilidadesComponent,
     ProyectosComponent,
     ContactoComponent,
-    PiePaginaComponent
+    PiePaginaComponent,
+    LoginComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

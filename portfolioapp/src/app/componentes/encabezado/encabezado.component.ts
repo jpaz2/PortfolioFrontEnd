@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { PortfolioService } from '../../servicios/portfolio.service';
+import { AuthService } from '../../seguridad/auth.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-encabezado',
@@ -8,10 +10,19 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class EncabezadoComponent implements OnInit {
 
-  constructor(private datosPortofolio:PortfolioService) { }
+  authService:any;
+
+  constructor(private datosPortofolio:PortfolioService, private authSer: AuthService) { }
 
   ngOnInit(): void {
-   /* this.datosPortofolio.obtenerDatos().subscribe(data => console.log)*/
+   this.authService=this.authSer;
   }
 
+  logout(){
+    this.authService.logout;
+  }
+
+  logIni(){
+    this.authService.logIni;
+  }
 }

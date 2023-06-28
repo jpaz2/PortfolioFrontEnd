@@ -8,16 +8,16 @@ import { RedSocial } from "./RedSocial";
 
 export interface Persona {
     id: number;
-    nombre: string;
-    apellido: string;
-    direccion: string;
-    fechaNacimiento: string;
-    email: string;
-    telefono: string;
-    estudios: Estudio[];
-    habilidades: Habilidad[];
-    proyectos: Proyecto[];
-    experiencias: Experiencia[];
-    redesSociales: RedSocial[];	
+    nombre?: string;
+    apellido?: string;
+    direccion?: string;
+    fechaNacimiento?: string;
+    email?: string;
+    telefono?: string;
+    estudios?: Estudio[];
+    habilidades?: Habilidad[];
+    proyectos?: Proyecto[];
+    experiencias?: Experiencia[];
+    redesSociales?: RedSocial[];	
     
 } 
