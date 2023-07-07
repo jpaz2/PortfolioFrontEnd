@@ -1,21 +1,11 @@
-<app-menu></app-menu>
-<app-carousel></app-carousel>    
-
-<router-outlet></router-outlet>
-
-<app-pie-pagina></app-pie-pagina>
-
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side">
+        <mat-toolbar color="primary">Menu</mat-toolbar>
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header (toggleSidenav)="sidenav.toggle()"></app-header>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>
