@@ -3,7 +3,7 @@ mat-sidenav {
 }
 
 mat-sidenav-content {
-    background-color: rgb(236, 216, 216);
+    background-color: hsl(73, 64%, 96%);
 }
 
 mat-sidenav-container {

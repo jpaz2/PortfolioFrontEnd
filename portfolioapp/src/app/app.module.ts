@@ -13,7 +13,6 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarModule } from './shared/components/sidebar/sidebar.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +29,6 @@ import { SidebarModule } from './shared/components/sidebar/sidebar.module';
     MaterialModule,
     BrowserAnimationsModule,
     SidebarModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
