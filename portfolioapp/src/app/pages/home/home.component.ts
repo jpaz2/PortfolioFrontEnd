@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
+import { PortfolioService } from '@app/servicios/portfolio.service';
+import { Persona } from '@app/model/Persona';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +10,15 @@ import { AuthService } from '../auth/auth.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public authSvc: AuthService) { }
+  private persona: Persona;
+  constructor(public authSvc: AuthService, private datosPortofolio:PortfolioService) { }
 
   ngOnInit(): void {
+
+    this.datosPortofolio.obtenerDatos().subscribe(data => {
+      this.persona = data
+    })
+
   }
 
 }
